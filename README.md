@@ -5,16 +5,15 @@ Charades: Speak, Draw, Act! is JavaScipt based game which is a bit different fro
 
 The game is on http://www.michaelbrabec.com/charades/
 
-Download the code on – https://github.com/voltain/CharadesJS
-
-How do you play it?
-Preparation
+##How do you play it?
+###Preparation
 
 Print the Game Board – https://github.com/voltain/CharadesJS/blob/master/img/Game_Plan.png
 Open the game on smartphone- http://www.michaelbrabec.com/charades/
 Split into teams by 2+ members
 Put your team figures (we used jelly beans of different colour) on Start
-Demo round
+
+###Demo round
 
 Select one member who will be performing. The rest of the team is guessing
 The performer selects options 1,2,3 are difficulty. Higher number = higher difficulty level
@@ -28,14 +27,15 @@ The other team(s) follows the same step
 All teams moves to first field on game board (which is drawing)
 Following rounds
 
-Team selects performer
+###Team selects performer
 Chooses difficulty (Higher number = higher difficulty level)
 Task is represented by the icon on game board you stand on
 Performs the task
 If successful they move on game board by number of difficulty points
 If failed, they stay on the same spot (the countdown is 90 seconds)
 If the word repeats, you skip it and generate another one
-Final round
+
+###Final round
 
 One of the teams reached finish field
 Opponent team(s) selects difficulty and chooses task which needs to be performed
@@ -48,12 +48,13 @@ Speak – you can only speak. No acting, using objects. You can’t use the root
 Draw – you can only draw. No speaking, head movements for Yes / No is allowed. You can’t use letters and numbers. You can use symbols.
 Act – you can only act with no speaking. Making sounds is allowed. You can’t use other objects and point on real objects around you.
 Breaking of the rule results in failed round.
-How does it work?
+
+##How does it work?
 The magic happens on not so many lines of code. There is JSON dictionary with information about task type (draw, speak, act) and difficulty. The application picks randomly words from the dictionary based on the difficulty.
 
 The picked word is inserted to HTML immediately and countdown is reset to 90 seconds. Code is at link – https://github.com/voltain/CharadesJS
 
-Space for improvement
+##Space for improvement
 Expand the dictionary
 Improved graphics
 Create dictionary manager – tool where you can quickly decide whether the word is drawable, actable or speakable and on what difficulty level
